@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"tesss\startup_stm32f103xb.o"
+"tesss\main.o"
+"tesss\gpio.o"
+"tesss\i2c.o"
+"tesss\tim.o"
+"tesss\stm32f1xx_it.o"
+"tesss\stm32f1xx_hal_msp.o"
+"tesss\stm32f1xx_hal_gpio_ex.o"
+"tesss\stm32f1xx_hal_i2c.o"
+"tesss\stm32f1xx_hal.o"
+"tesss\stm32f1xx_hal_rcc.o"
+"tesss\stm32f1xx_hal_rcc_ex.o"
+"tesss\stm32f1xx_hal_gpio.o"
+"tesss\stm32f1xx_hal_dma.o"
+"tesss\stm32f1xx_hal_cortex.o"
+"tesss\stm32f1xx_hal_pwr.o"
+"tesss\stm32f1xx_hal_flash.o"
+"tesss\stm32f1xx_hal_flash_ex.o"
+"tesss\stm32f1xx_hal_exti.o"
+"tesss\stm32f1xx_hal_tim.o"
+"tesss\stm32f1xx_hal_tim_ex.o"
+"tesss\system_stm32f1xx.o"
+--strict --scatter "tesss\tesss.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "tesss.map" -o tesss\tesss.axf
